@@ -1,2 +1,57 @@
-<app-nav></app-nav>
-<router-outlet></router-outlet>
+<header class="navbar navbar-expand navbar-dark bg-dark">
+  <img src="assets/img/Logo3.png" style="height: 80px;">
+
+  <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+      <a class="nav-link" [routerLink]="['home']">LabourZillaZone</a>
+    </li>
+  <li class="nav-item text-white">
+          <a class="nav-link" routerLink="/register">New User</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link" routerLink="/details">Display</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link" routerLink="/labour">Labours</a>
+        </li>
+        <li class="nav-item text-white">
+          <a class="nav-link" routerLink="/Admin">Admin</a>
+        </li>
+  
+    <!-- Authorized only -->
+    <li class="nav-item" *ngIf="isAuthorized">
+      <a class="nav-link" [routerLink]="['profile']">Profile</a>
+    </li>
+
+    <!-- Admin only -->
+    <li class="nav-item" *ngIf="isAdmin">
+      <a class="nav-link" [routerLink]="['admin', 'dashboard']">Dashboard</a>
+    </li>
+
+    <!-- Anonymous only -->
+    <li class="nav-item" *ngIf="!isAuthorized">
+      <a class="nav-link" [routerLink]="['login']">Login</a>
+    </li>
+
+    <!-- Authorized only -->
+    <li class="nav-item" *ngIf="isAuthorized">
+      <a class="nav-link" (click)="logout()">Logout</a>
+    </li>
+  </ul>
+
+  <span class="navbar-text">
+    <span class="badge badge-warning" *ngIf="isAuthorized">Authorized</span>
+    <span class="badge badge-danger" *ngIf="isAdmin">Admin</span>
+  </span>
+</header>
+
+<div class="jumbotron">
+<div class="container-fluid">
+  <router-outlet></router-outlet>
+</div>
+</div>
+
+<div class="text-center">
+<p>Create Login based on your users and Roles in Project</p>
+<p>Authenticate User based on UserName Password!!!</p>
+</div>
