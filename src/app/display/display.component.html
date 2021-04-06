@@ -8,6 +8,7 @@
         <th>Contact</th>
         <th>Password</th>
         <th>Confirm Password</th>
+        <th>Role</th>
         <th>Delete</th>
     </tr>
     <tr *ngFor="let u of objs.list">
@@ -19,6 +20,8 @@
         <td (click)="fillForm(u)">{{u.Lcontact}}</td>
         <td (click)="fillForm(u)">{{u.PasswordC}}</td>
         <td (click)="fillForm(u)">{{u.ConfirmPassword}}</td>
+        <td (click)="fillForm(u)">{{u.RoleU}}</td>
+        
         <td><button (click)="delUser(u.UserId)" class="btn-dark">
         Delete</button></td>
     </tr>

@@ -10,6 +10,8 @@ import { AuthGuard } from './app-routing.guard';
 import { AuthService } from './services/auth.service';
 import { LoginComponent } from './login/login.component';
 import { Role } from './models/role';
+import { AdminDisplayComponent } from './admin-display/admin-display.component';
+import { LabourdisplayComponent } from './labourdisplay/labourdisplay.component';
 
 
 const routes: Routes = [
@@ -22,7 +24,9 @@ const routes: Routes = [
       },
       {path:'register',component:RegisterComponent},
       {path:'details',component:DetailsComponent},
-    
+      {path:'admindisplay',component:AdminDisplayComponent},
+      {path:'labour',component:LabourdisplayComponent},
+     
 
       {
         path: 'profile',

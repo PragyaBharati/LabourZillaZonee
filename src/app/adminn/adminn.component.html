@@ -1,0 +1,15 @@
+<table class="table table-dark table-sm">
+    <tr>
+        <th>LoginId</th>
+        <th>Admin Name</th>
+        <th>Admin Password</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let a of objs.alist">
+        <td (click)="fillForm(a)">{{a.LoginId}}</td>
+        <td (click)="fillForm(a)">{{a.AdminName}}</td>
+        <td (click)="fillForm(a)">{{a.Apassword}}</td>
+        <td><button (click)="delUser(u.UserId)" class="btn-dark">
+        Delete</button></td>
+    </tr>
+</table>

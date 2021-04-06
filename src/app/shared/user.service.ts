@@ -5,7 +5,7 @@ import { HttpClient } from "@angular/common/http";
   providedIn: 'root'
 })
 export class UserService {
-readonly OurUrl="https://localhost:44311/api";
+readonly OurUrl="https://localhost:44363/api";
 formData:User=new User();
 list:User[];
   constructor(private objHttp:HttpClient) { }

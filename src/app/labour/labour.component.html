@@ -1,0 +1,38 @@
+<table class="table table-dark table-sm">
+    <tr>
+        <th>User Id</th>
+        <th>FirstName</th>
+        <th>LastName</th>
+        <th>Password</th>
+        <th>Confirm Password</th>
+        <th>Profession</th>
+        <th>City</th>
+        <th>State</th>
+        <th>DailyWages</th>
+        <th>DateTime</th>
+        <th>Available</th>
+        <th>Contact</th>
+        <th>Pic</th>
+        <th>Role</th>
+        <th>Delete</th>
+    </tr>
+    <tr *ngFor="let l of objs.llist">
+        <td (click)="fillForm(l)">{{l.Id}}</td>
+        <td (click)="fillForm(l)">{{l.FirstName}}</td>
+        <td (click)="fillForm(l)">{{l.LastName}}</td>
+        <td (click)="fillForm(l)">{{l.Pswd}}</td>
+        <td (click)="fillForm(l)">{{l.Cnfrmpswd}}</td>
+        <td (click)="fillForm(l)">{{l.Profession}}</td>
+        <td (click)="fillForm(l)">{{l.CityAddress}}</td>
+        <td (click)="fillForm(l)">{{l.StateL}}</td>
+        <td (click)="fillForm(l)">{{l.DailyWages}}</td>
+        <td (click)="fillForm(l)">{{l.TimeDate}}</td>
+        <td (click)="fillForm(l)">{{l.Available}}</td>
+        <td (click)="fillForm(l)">{{l.Lcontact}}</td>
+        <td (click)="fillForm(l)">{{l.Ppic}}</td>
+        <td (click)="fillForm(l)">{{l.RoleL}}</td>
+        
+        <td><button (click)="delUser(u.UserId)" class="btn-dark">
+        Delete</button></td>
+    </tr>
+</table>

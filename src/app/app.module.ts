@@ -16,6 +16,9 @@ import { NavComponent } from './nav/nav.component';
 import { DisplayComponent } from './display/display.component';
 import { DetailsComponent } from './details/details.component';
 import { RegisterComponent } from './register/register.component';
+import { AdminnComponent } from './adminn/adminn.component';
+import { LabourComponent } from './labour/labour.component';
+import { LabourdisplayComponent } from './labourdisplay/labourdisplay.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +33,10 @@ import { RegisterComponent } from './register/register.component';
     NavComponent,
     DisplayComponent,
     DetailsComponent,
-    RegisterComponent
+    RegisterComponent,
+    AdminnComponent,
+    LabourComponent,
+    LabourdisplayComponent
   ],
   imports: [
     BrowserModule,HttpClientModule,FormsModule,

@@ -1,5 +1,5 @@
 export class User {
-        UserId:number=0;
+        UserId:string='';
         FirstName:string='';
         LastName:string='';
         CityAddress:string='';
@@ -7,6 +7,7 @@ export class User {
         Lcontact:string='';
         PasswordC:string='';
         ConfirmPassword:string='';
+        RoleU:string='';
     }
     
 
