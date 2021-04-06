@@ -1,7 +1,15 @@
-<div class="alert alert-primary" role="alert">
-  Login component!
-</div>
-
+<div class="container">
+  <h4>Sign In</h4>
+<form >
+          <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">UserId</label>
+        <input type="number" class="form-control"  >
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input type="password" class="form-control">
+      </div>
+  
 <button 
   class="btn btn-outline-warning" 
   (click)="login(Role.User)">Login as User</button>

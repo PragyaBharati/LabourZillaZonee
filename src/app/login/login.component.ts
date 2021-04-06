@@ -15,7 +15,7 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
-
+handle
   login(role: Role) {
     this.authService.login(role);
     this.router.navigate(['/']);
