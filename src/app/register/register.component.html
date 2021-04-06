@@ -1,0 +1,39 @@
+<div class="container">
+    <h4>Create Your Account</h4>
+<form #form="ngForm" (submit)="onSubmit(form)">
+            <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">UserId</label>
+          <input type="number" class="form-control"  #UserId="ngModel"[(ngModel)]="objs.formData.UserId">
+        </div>
+        <div class="mb-3">
+          <label for="exampleInputPassword1" class="form-label">FirstName</label>
+          <input type="text" class="form-control" #FirstName="ngModel" [(ngModel)]="objs.formData.FirstName">
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">LastName</label>
+            <input type="text" class="form-control" #LastName="ngModel"[(ngModel)]="objs.formData.LastName">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">City</label>
+            <input type="text" class="form-control" #CityAddress="ngModel"[(ngModel)]="objs.formData.CityAddress">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">State</label>
+            <input type="text" class="form-control" #StateC="ngModel"[(ngModel)]="objs.formData.StateC">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Contact</label>
+            <input type="text" class="form-control" #Lcontact="ngModel"[(ngModel)]="objs.formData.Lcontact">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Password</label>
+            <input type="password" class="form-control" #PasswordC="ngModel"[(ngModel)]="objs.formData.PasswordC">
+          </div>
+          <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Confirm Password</label>
+            <input type="password" class="form-control" #ConfirmPassword="ngModel"[(ngModel)]="objs.formData.ConfirmPassword">
+          </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    

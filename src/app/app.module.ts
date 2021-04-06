@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
+import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app/app.component';
 import { HomeComponent } from './home/home.component';
@@ -10,6 +11,11 @@ import { LoginComponent } from './login/login.component';
 import { UserRoleDirective } from './directives/user-role.directive';
 import { UserDirective } from './directives/user.directive';
 import { AuthService } from './services/auth.service';
+import { AdminDisplayComponent } from './admin-display/admin-display.component';
+import { NavComponent } from './nav/nav.component';
+import { DisplayComponent } from './display/display.component';
+import { DetailsComponent } from './details/details.component';
+import { RegisterComponent } from './register/register.component';
 
 @NgModule({
   declarations: [
@@ -19,10 +25,15 @@ import { AuthService } from './services/auth.service';
     NotFoundComponent,
     LoginComponent,
     UserDirective,
-    UserRoleDirective
+    UserRoleDirective,
+    AdminDisplayComponent,
+    NavComponent,
+    DisplayComponent,
+    DetailsComponent,
+    RegisterComponent
   ],
   imports: [
-    BrowserModule,
+    BrowserModule,HttpClientModule,FormsModule,
     AppRoutingModule
   ],
   exports: [

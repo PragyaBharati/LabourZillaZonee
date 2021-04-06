@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { DisplayComponent } from './display/display.component';
+import { RegisterComponent } from './register/register.component';
+import{DetailsComponent} from './details/details.component'
 import { ProfileComponent } from './profile/profile.component';
 import { NotFoundComponent } from './error/not-found/not-found.component';
 import { AuthGuard } from './app-routing.guard';
@@ -17,6 +20,9 @@ const routes: Routes = [
         path: '',
         component: HomeComponent
       },
+      {path:'register',component:RegisterComponent},
+      {path:'details',component:DetailsComponent},
+    
 
       {
         path: 'profile',

@@ -1,0 +1,26 @@
+input
+{
+    width:450px;
+    height: 40px;
+    margin:auto;
+    padding: 10px 10px;
+}
+form{
+    width: 500px;
+    align-items: center;
+    background-color: skyblue;
+    margin: auto;
+   
+
+    
+}
+h4{
+    text-align: center;
+   padding-bottom: 20px;
+   padding-top: 20px; 
+}
+label{
+    font-weight: bold;
+    margin: 0 20px;
+}
+
